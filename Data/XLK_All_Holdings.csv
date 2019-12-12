@@ -1,0 +1,71 @@
+﻿Name,Ticker,Identifier,SEDOL,Weight,Sector,Shares Held,Local Currency
+Microsoft Corporation,MSFT,59491810,2588173,19.528240,Software,32573264.000,USD
+Apple Inc.,AAPL,03783310,2046251,19.159657,Technology Hardware Storage & Peripherals,18122408.000,USD
+Visa Inc. Class A,V,92826C83,B2PZN04,5.337829,IT Services,7367375.000,USD
+Mastercard Incorporated Class A,MA,57636Q10,B121557,4.360612,IT Services,3808630.000,USD
+Intel Corporation,INTC,45814010,2463247,4.231590,Semiconductors & Semiconductor Equipment,18898786.000,USD
+Cisco Systems Inc.,CSCO,17275R10,2198163,3.149132,Communications Equipment,18110720.000,USD
+Adobe Inc.,ADBE,00724F10,2008154,2.518677,Software,2070965.000,USD
+salesforce.com inc.,CRM,79466L30,2310525,2.333688,Software,3741336.000,USD
+NVIDIA Corporation,NVDA,67066G10,2379504,2.183311,Semiconductors & Semiconductor Equipment,2598010.000,USD
+Accenture Plc Class A,ACN,G1151C10,B4BNMY3,2.175109,IT Services,2718157.000,USD
+Broadcom Inc.,AVGO,11135F10,BDZ78H9,2.114659,Semiconductors & Semiconductor Equipment,1698223.000,USD
+PayPal Holdings Inc,PYPL,70450Y10,BYW36M8,2.063409,IT Services,5019737.000,USD
+Oracle Corporation,ORCL,68389X10,2661568,2.057652,Software,9392424.000,USD
+International Business Machines Corporation,IBM,45920010,2005973,2.004595,IT Services,3779119.000,USD
+Texas Instruments Incorporated,TXN,88250810,2885409,1.924626,Semiconductors & Semiconductor Equipment,3982868.000,USD
+QUALCOMM Incorporated,QCOM,74752510,2714923,1.638480,Semiconductors & Semiconductor Equipment,4871250.000,USD
+Fidelity National Information Services Inc.,FIS,31620M10,2769796,1.419666,IT Services,2616987.000,USD
+Automatic Data Processing Inc.,ADP,05301510,2065308,1.239720,IT Services,1851255.000,USD
+Intuit Inc.,INTU,46120210,2459020,1.124028,Software,1109524.000,USD
+Fiserv Inc.,FISV,33773810,2342034,1.106819,IT Services,2435192.000,USD
+Global Payments Inc.,GPN,37940X10,2712013,0.888160,IT Services,1280018.000,USD
+Applied Materials Inc.,AMAT,03822210,2046552,0.883471,Semiconductors & Semiconductor Equipment,3940806.000,USD
+Micron Technology Inc.,MU,59511210,2588184,0.866338,Semiconductors & Semiconductor Equipment,4708806.000,USD
+ServiceNow Inc.,NOW,81762P10,B80NXX8,0.853349,Software,798831.000,USD
+Analog Devices Inc.,ADI,03265410,2032067,0.715445,Semiconductors & Semiconductor Equipment,1575888.000,USD
+Advanced Micro Devices Inc.,AMD,00790310,2007849,0.714092,Semiconductors & Semiconductor Equipment,4631043.000,USD
+Autodesk Inc.,ADSK,05276910,2065159,0.663535,Software,936769.000,USD
+Lam Research Corporation,LRCX,51280710,2502247,0.654535,Semiconductors & Semiconductor Equipment,616559.000,USD
+Cognizant Technology Solutions Corporation Class A,CTSH,19244610,2257019,0.577476,IT Services,2356097.000,USD
+Amphenol Corporation Class A,APH,03209510,2145084,0.525044,Electronic Equipment Instruments & Components,1268980.000,USD
+TE Connectivity Ltd.,TEL,H8498910,B62B7C3,0.519735,Electronic Equipment Instruments & Components,1433130.000,USD
+HP Inc.,HPQ,40434L10,BYX4D52,0.512578,Technology Hardware Storage & Peripherals,6321954.000,USD
+Paychex Inc.,PAYX,70432610,2674458,0.457675,IT Services,1364377.000,USD
+Motorola Solutions Inc.,MSI,62007630,B5BKPQ4,0.451783,Communications Equipment,706264.000,USD
+FleetCor Technologies Inc.,FLT,33904110,B4R28B3,0.442639,IT Services,369285.000,USD
+KLA Corporation,KLAC,48248010,2480138,0.432916,Semiconductors & Semiconductor Equipment,679377.000,USD
+Microchip Technology Incorporated,MCHP,59501710,2592174,0.398274,Semiconductors & Semiconductor Equipment,1015472.000,USD
+Xilinx Inc.,XLNX,98391910,2985677,0.388765,Semiconductors & Semiconductor Equipment,1077639.000,USD
+Corning Inc,GLW,21935010,2224701,0.376173,Electronic Equipment Instruments & Components,3331196.000,USD
+ANSYS Inc.,ANSS,03662Q10,2045623,0.362447,Software,358738.000,USD
+Hewlett Packard Enterprise Co.,HPE,42824C10,BYVYWS0,0.350552,Technology Hardware Storage & Peripherals,5569779.000,USD
+Synopsys Inc.,SNPS,87160710,2867719,0.335827,Software,641154.000,USD
+VeriSign Inc.,VRSN,92343E10,2142922,0.331883,IT Services,444370.000,USD
+CDW Corp.,CDW,12514G10,BBM5MD6,0.328525,Electronic Equipment Instruments & Components,617409.000,USD
+Keysight Technologies Inc,KEYS,49338L10,BQZJ0Q9,0.322439,Electronic Equipment Instruments & Components,800295.000,USD
+Cadence Design Systems Inc.,CDNS,12738710,2302232,0.312590,Software,1195208.000,USD
+Skyworks Solutions Inc.,SWKS,83088M10,2961053,0.299493,Semiconductors & Semiconductor Equipment,732471.000,USD
+Maxim Integrated Products Inc.,MXIM,57772K10,2573760,0.262087,Semiconductors & Semiconductor Equipment,1157205.000,USD
+Fortinet Inc.,FTNT,34959E10,B5B2106,0.249062,Software,605494.000,USD
+NortonLifeLock Inc.,NLOK,66877110,BJN4XN5,0.244036,Software,2425656.000,USD
+NetApp Inc.,NTAP,64110D10,2630643,0.243331,Technology Hardware Storage & Peripherals,1014930.000,USD
+Western Digital Corporation,WDC,95810210,2954699,0.240378,Technology Hardware Storage & Peripherals,1262759.000,USD
+Gartner Inc.,IT,36665110,2372763,0.239996,IT Services,384563.000,USD
+Akamai Technologies Inc.,AKAM,00971T10,2507457,0.234475,IT Services,703814.000,USD
+Broadridge Financial Solutions Inc.,BR,11133T10,B1VP7R6,0.234028,IT Services,487541.000,USD
+Citrix Systems Inc.,CTXS,17737610,2182553,0.229399,Software,524937.000,USD
+Seagate Technology PLC,STX,G7945M10,B58JVZ5,0.228510,Technology Hardware Storage & Peripherals,1010010.000,USD
+Qorvo Inc.,QRVO,74736K10,BR9YYP4,0.215815,Semiconductors & Semiconductor Equipment,502461.000,USD
+Leidos Holdings Inc.,LDOS,52532710,BDV82B8,0.205823,IT Services,576738.000,USD
+Jack Henry & Associates Inc.,JKHY,42628110,2469193,0.193679,IT Services,328461.000,USD
+Western Union Company,WU,95980210,B1F76F9,0.192892,IT Services,1808368.000,USD
+Arista Networks Inc.,ANET,04041310,BN33VM5,0.175010,Communications Equipment,232160.000,USD
+DXC Technology Co.,DXC,23355L10,BYXD7B3,0.160944,IT Services,1117532.000,USD
+Juniper Networks Inc.,JNPR,48203R10,2431846,0.139768,Communications Equipment,1475215.000,USD
+F5 Networks Inc.,FFIV,31561610,2427599,0.139473,Communications Equipment,256503.000,USD
+STATE STREET INSTL US GOVERNME STIF USD,85749246,85749246,Unassigned,0.137835,Unassigned,34799200.000,USD
+FLIR Systems Inc.,FLIR,30244510,2344717,0.121853,Electronic Equipment Instruments & Components,578494.000,USD
+Xerox Holdings Corporation,XRX,98421M10,BJJD5G3,0.120631,Technology Hardware Storage & Peripherals,816289.000,USD
+IPG Photonics Corporation,IPGP,44980X10,2698782,0.083306,Electronic Equipment Instruments & Components,153095.000,USD
+Alliance Data Systems Corporation,ADS,01858110,2762030,0.073389,IT Services,175776.000,USD
