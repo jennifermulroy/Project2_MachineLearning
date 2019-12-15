@@ -77,15 +77,16 @@ class StartPage(tk.Frame):
         optimize_btn.pack(pady=10)
 
     def optimize(self):
-        print("Getting Values")
+        # print("Getting Values")
+        risk_profiles = ['None', 'High', 'Medium', 'Low']
         data = {}
         data['time'] = time.strftime("%H-%M")
         data['sector'] = self.body_frame.dropdown1_cmd.get()
         data['index'] = self.body_frame.dropdown2_cmd.get()
         data['asset_class'] = self.body_frame.dropdown3_cmd.get()
         data['no_of_instruments'] = self.body_frame.dropdown4_cmd.get()
-        data['risk_profile'] = self.body_frame.radiocmd.get()
-        print(data)
+        data['risk_profile'] = risk_profiles[int(self.body_frame.radiocmd.get())]
+        # print(data)
         self.controller.withdraw()
         self.controller.process_fn(data)
         self.controller.deiconify()
@@ -97,7 +98,7 @@ class HeadFrame(tk.Frame):
         self.parent = parent
         tk.Frame.__init__(self, parent)
 
-        self.title_label = tk.Label(self, text="PORTFOLIO SELECTOR\nSector specific", font=('Cambria', 20, 'bold'))
+        self.title_label = tk.Label(self, text="PORTFOLIO SELECTOR\nSector specific", font=('Cambria', 25, 'bold'))
 
         self.watch_label = tk.Label(self, font=('times', 12))
         self.update_watch()

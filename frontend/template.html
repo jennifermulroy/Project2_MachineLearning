@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>STOCK PREDICTOR REPORT</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body style="font-family:'Cambria'">
+    <h1><center>STOCK PREDICTOR REPORT</center></h2>
+    <hr>
+    <h2><font color="Red">Introduction</font></h2>
+    <p><font face="Cambria" size="5" color="Black">
+        The returns predictor accepted your inputs and ran our propreitary machine learning algorithms for picking Stocks 
+        that have a high probability of beating the sector index that was selected within the User Interface. 
+    </font></p>
+    <br><br><br>
+    <h2><font color="Red"> User Selection </font></h2>
+    <hr>   
+    <div>
+        <table>
+            {% for key, value in user_selection.items() %}
+                <tr>
+                    <th> <font face="Cambria" size="5" color="Black"></font>{{ key }} </th>
+                    <td> <font face="Cambria" size="5" color="Black"></font>{{ value }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <br><br><br>
+    <h2><font color="Red"> Recommended Stocks </font></h2>
+    <hr>   
+    <div>
+        {% for item in predicted_symbols %}
+        <li><font face="Cambria" size="5" color="Black"></font>{{item}}</li>
+        {% endfor %}
+    </div>
+
+    <p style="page-break-before: always"></p>
+
+    <h2><font color="Red"> Stocks Summaries</font></h2>
+    <hr>   
+    <!-- <div>{{summary}}</div> -->
+    {% for key, value in summaries.items() %}
+    <h3><font face="Cambria" size="5" color="Blue"> {{key}} </font></h2>
+    {{value}}
+    <hr>
+    {% endfor %}
+
+    <h3><b>Disclaimer:</b></h3>
+    <p><font face="Cambria" size="3" color="Black">
+    We are not registered as a securities broker-dealer or an investment adviser either with the U.S. Securities and Exchange Commission (the SEC) or with any state securities regulatory authority. We are neither licensed nor qualified to provide investment advice. Use advice at your own discretion
+    </font></p>
+
+</body>
+
+</html>
