@@ -102,7 +102,7 @@ class HeadFrame(tk.Frame):
         self.watch_label = tk.Label(self, font=('times', 12))
         self.update_watch()
 
-        logo = Image.open("logo.jpg")
+        logo = Image.open("images/logo.jpg")
         self.logo = ImageTk.PhotoImage(logo)
         self.logo_label = tk.Label(self, image=self.logo)
 
