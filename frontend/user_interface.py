@@ -73,7 +73,7 @@ class StartPage(tk.Frame):
         head_frame.pack()
         self.body_frame.pack(fill=tk.BOTH, expand=True)
 
-        optimize_btn = tk.Button(self, text="SELECT PORTFOLIO", bg='green', fg='white', command=self.optimize)
+        optimize_btn = tk.Button(self, text="SELECT STOCKS", bg='green', fg='white', command=self.optimize)
         optimize_btn.pack(pady=10)
 
     def optimize(self):
@@ -98,7 +98,7 @@ class HeadFrame(tk.Frame):
         self.parent = parent
         tk.Frame.__init__(self, parent)
 
-        self.title_label = tk.Label(self, text="PORTFOLIO SELECTOR\nSector specific", font=('Cambria', 25, 'bold'))
+        self.title_label = tk.Label(self, text="STOCK SELECTOR\nSector specific", font=('Cambria', 25, 'bold'))
 
         self.watch_label = tk.Label(self, font=('times', 12))
         self.update_watch()
