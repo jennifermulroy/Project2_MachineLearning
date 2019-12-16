@@ -3,6 +3,7 @@
 #################
 import tkinter as tk
 import tkinter.ttk as ttk
+import tkinter.font as tkFont
 
 from collections import OrderedDict
 from PIL import ImageTk, Image
@@ -20,6 +21,7 @@ class UI(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
         self.process_fn = process_fn
         # self.attributes('-fullscreen', True)
+        
 
         # Create a container frame to hold all the pages inside it
         container = tk.Frame(self)
@@ -65,6 +67,10 @@ class StartPage(tk.Frame):
         self.controller = controller
         tk.Frame.__init__(self, parent)
 
+        # frame_bg = '#222223'
+        frame_bg = "#24252A"
+        self.configure(background=frame_bg)
+
         menubar = MenuBar(self, controller)
         controller.config(menu=menubar)
 
@@ -73,7 +79,7 @@ class StartPage(tk.Frame):
         head_frame.pack()
         self.body_frame.pack(fill=tk.BOTH, expand=True)
 
-        optimize_btn = tk.Button(self, text="SELECT STOCKS", bg='green', fg='white', command=self.optimize)
+        optimize_btn = tk.Button(self, text="SELECT STOCKS", bg='#3CB1EA', fg="#FFFFFF",font=("Cambria",15,'bold'), borderwidth=4, bd=2, command=self.optimize)
         optimize_btn.pack(pady=10)
 
     def optimize(self):
@@ -97,10 +103,14 @@ class HeadFrame(tk.Frame):
         self.controller = controller
         self.parent = parent
         tk.Frame.__init__(self, parent)
+        label_fg = "#FFFFFF"
+        label_bg = "#454952"
+        # frame_bg = '#222223'
+        frame_bg = "#24252A"
+        self.configure(background=frame_bg)
 
-        self.title_label = tk.Label(self, text="STOCK SELECTOR\nSector specific", font=('Cambria', 25, 'bold'))
-
-        self.watch_label = tk.Label(self, font=('times', 12))
+        self.title_label = tk.Label(self, text="STOCK SELECTOR", fg=label_fg, bg=label_bg, font=('Cambria', 25, 'bold'))
+        self.watch_label = tk.Label(self, fg="#89B821", bg=frame_bg, font=('Cambria', 12, 'bold'))
         self.update_watch()
 
         logo = Image.open("images/logo.jpg")
@@ -110,9 +120,9 @@ class HeadFrame(tk.Frame):
         self.columnconfigure(0, weight=4)
         self.columnconfigure(1, weight=1)
 
-        self.title_label.grid(row=0, column=0, sticky='s')
+        self.title_label.grid(row=0, column=0, padx=15, pady=5, sticky='s')
         self.watch_label.grid(row=1, column=0, sticky='n')
-        self.logo_label.grid(row=0, rowspan=2, column=1, sticky='n')
+        self.logo_label.grid(row=0, rowspan=2, padx=5, pady=5, column=1, sticky='n')
 
 
     def update_watch(self): 
@@ -126,12 +136,22 @@ class BodyFrame(tk.Frame):
         self.controller = controller
         self.parent = parent
         tk.Frame.__init__(self, parent)
+        # frame_bg = '#222223'
+        frame_bg = "#24252A"
+        self.configure(background=frame_bg)
 
-        label_1 = tk.Label(self, text="SECTOR", borderwidth=2, relief="solid", height=3)
-        label_2 = tk.Label(self, text="RISK PROFILE", borderwidth=2, relief="solid", height=3)
-        label_3 = tk.Label(self, text="INDEX", borderwidth=2, relief="solid", height=3)
-        label_4 = tk.Label(self, text="ASSET CLASS", borderwidth=2, relief="solid", height=3)
-        label_5 = tk.Label(self, text="NO OF STOCKS", borderwidth=2, relief="solid", height=3)
+        # self.customFont = tkFont.Font("Cambria",'bold')
+        label_font = ("Cambria",12,'bold')
+        label_fg = "#FFFFFF"
+        label_bg = "#454952"
+        button_font = label_font
+        button_fg = label_fg
+        button_bg = "#2BA3C8"
+        label_1 = tk.Label(self, text="SECTOR", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
+        label_2 = tk.Label(self, text="RISK PROFILE", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
+        label_3 = tk.Label(self, text="INDEX", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
+        label_4 = tk.Label(self, text="ASSET CLASS", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
+        label_5 = tk.Label(self, text="NO OF STOCKS", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
 
         label_1.grid(row=0, column=0, rowspan=2, sticky='nswe', pady=10, padx=(15, 75))
         label_2.grid(row=2, column=0, rowspan=2, sticky='nswe', pady=10, padx=(15, 75))
@@ -145,22 +165,25 @@ class BodyFrame(tk.Frame):
         self.dropdown1_cmd = tk.StringVar()
         self.dropdown1_cmd.set(sectors_list[0]) # default value
         dropdown1 = tk.OptionMenu(self, self.dropdown1_cmd, *sectors_list)
+        dropdown1.config(font=button_font, fg=button_fg, bg=button_bg, width=15) #, highlightthickness=0
         dropdown1.grid(row=0, column=1, columnspan=3, sticky='ws')
 
         # Risk profile elements
         self.radiocmd = tk.IntVar()
-        radio1 = tk.Radiobutton(self, text="High", variable=self.radiocmd, value=1)
-        radio2 = tk.Radiobutton(self, text="Medium", variable=self.radiocmd, value=2)
-        radio3 = tk.Radiobutton(self, text="Low", variable=self.radiocmd, value=3)
-        radio1.grid(row=2, column=1, sticky='sw')
-        radio2.grid(row=2, column=2, sticky='sw')
-        radio3.grid(row=2, column=3, sticky='sw')
+        radio1 = tk.Radiobutton(self, text="High", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=1)
+        radio2 = tk.Radiobutton(self, text="Medium", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=2)
+        radio3 = tk.Radiobutton(self, text="Low", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=3)
+        self.radiocmd.set(1)
+        radio1.grid(row=2, column=1, padx=3, sticky='sw')
+        radio2.grid(row=2, column=2, padx=3, sticky='sw')
+        radio3.grid(row=2, column=3, padx=3, sticky='sw')
 
         # INDEX elements
         INDEX_list = ["S&P 500", "NASDAQ"]
         self.dropdown2_cmd = tk.StringVar()
         self.dropdown2_cmd.set(INDEX_list[0]) # default value
         dropdown2 = tk.OptionMenu(self, self.dropdown2_cmd, *INDEX_list)
+        dropdown2.config(font=button_font, fg=button_fg, bg=button_bg, width=15)
         dropdown2.grid(row=4, column=1, columnspan=3, sticky='ws')
 
         # ASSET CLASS elements
@@ -168,6 +191,7 @@ class BodyFrame(tk.Frame):
         self.dropdown3_cmd = tk.StringVar()
         self.dropdown3_cmd.set(assets_list[0]) # default value
         dropdown3 = tk.OptionMenu(self, self.dropdown3_cmd, *assets_list)
+        dropdown3.config(font=button_font, fg=button_fg, bg=button_bg, width=15)
         dropdown3.grid(row=6, column=1, columnspan=3, sticky='ws')
 
         # NO OF STOCKS elements
@@ -175,6 +199,7 @@ class BodyFrame(tk.Frame):
         self.dropdown4_cmd = tk.StringVar()
         self.dropdown4_cmd.set(no_of_stocks_list[0]) # default value
         dropdown4 = tk.OptionMenu(self, self.dropdown4_cmd, *no_of_stocks_list)
+        dropdown4.config(font=button_font, fg=button_fg, bg=button_bg, width=15)
         dropdown4.grid(row=8, column=1, columnspan=3, sticky='ws')    
 
         

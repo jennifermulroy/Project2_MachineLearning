@@ -1,3 +1,4 @@
+
 from sklearn.externals.joblib import load
 from jinja2 import Environment, FileSystemLoader
 import urllib.request, urllib.error, urllib.parse
@@ -18,18 +19,18 @@ def process(data):
     # RUN THE MODEL
     print('\n' * 1)
     print(colored("""
-                ########################
-                # RUNNING MODEL
-                ########################
+                ################################
+                # RUNNING MACHINE LEARNING MODEL
+                ################################
               """, 'green'))
     predicted_symbols = predict()
 
     # GET SUMMARIES FOR SYMBOLS
     print('\n' * 1)
     print(colored("""
-                ########################
+                ###############################
                 # GETTING SUMMARIES FOR SYMBOLS
-                ########################
+                ###############################
               """, 'green'))
     summaries = {}
     for i in range(int(data['no_of_instruments'])):
@@ -39,9 +40,9 @@ def process(data):
     # Loading the html template "template.html" to jinja
     print('\n' * 1)
     print(colored("""
-                ########################
-                # CREATING THE REPORT
-                ########################
+                #############################
+                # CREATING THE SUMMARY REPORT
+                #############################
               """, 'green'))
     env = Environment(loader=FileSystemLoader('.'))
     template = env.get_template(HTML_TEMPLATE_PATH)
