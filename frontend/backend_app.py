@@ -60,7 +60,7 @@ def process(data):
         fh.write(html_out)
 
     # Creating a pdf file from the saved output html file
-    out_pdf_name = time.strftime('%m-%d-%Y-%H-%M') + "-portfolio-analysis.pdf"
+    out_pdf_name = time.strftime('%m-%d-%Y-%H-%M') + "-stock-selector.pdf"
     out_pdf_path = PDF_REPORTS_PATH + "\\" + out_pdf_name
     pdfkit.from_file('out.html', out_pdf_path)
 
