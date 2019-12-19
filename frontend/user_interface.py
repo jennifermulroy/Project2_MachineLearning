@@ -84,7 +84,7 @@ class StartPage(tk.Frame):
 
     def optimize(self):
         # print("Getting Values")
-        risk_profiles = ['None', 'High', 'Medium', 'Low']
+        risk_profiles = ['Small Cap', 'Mid Cap', 'Large Cap']
         data = {}
         data['time'] = time.strftime("%H-%M")
         data['sector'] = self.body_frame.dropdown1_cmd.get()
@@ -148,7 +148,7 @@ class BodyFrame(tk.Frame):
         button_fg = label_fg
         button_bg = "#2BA3C8"
         label_1 = tk.Label(self, text="SECTOR", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
-        label_2 = tk.Label(self, text="RISK PROFILE", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
+        label_2 = tk.Label(self, text="MARKET CAP", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
         label_3 = tk.Label(self, text="INDEX", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
         label_4 = tk.Label(self, text="ASSET CLASS", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
         label_5 = tk.Label(self, text="NO OF STOCKS", borderwidth=2, relief="solid", height=3, font=label_font, fg=label_fg, bg=label_bg)
@@ -161,7 +161,7 @@ class BodyFrame(tk.Frame):
 
 
         # Sector elements
-        sectors_list = ["Information Tech", "Insurance"]
+        sectors_list = ['Technology','Communication Services','Consumer Discretionary','Consumer Staples','Energy''Financial','Health Care','Industrial','Materials','Real Estate','Utilities']
         self.dropdown1_cmd = tk.StringVar()
         self.dropdown1_cmd.set(sectors_list[0]) # default value
         dropdown1 = tk.OptionMenu(self, self.dropdown1_cmd, *sectors_list)
@@ -170,16 +170,16 @@ class BodyFrame(tk.Frame):
 
         # Risk profile elements
         self.radiocmd = tk.IntVar()
-        radio1 = tk.Radiobutton(self, text="High", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=1)
-        radio2 = tk.Radiobutton(self, text="Medium", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=2)
-        radio3 = tk.Radiobutton(self, text="Low", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=3)
+        radio1 = tk.Radiobutton(self, text="Small Cap", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=1)
+        radio2 = tk.Radiobutton(self, text="Mid Cap", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=2)
+        radio3 = tk.Radiobutton(self, text="Large Cap", font=button_font, fg=button_fg, bg=button_bg, selectcolor=frame_bg, variable=self.radiocmd, value=3)
         self.radiocmd.set(1)
         radio1.grid(row=2, column=1, padx=3, sticky='sw')
         radio2.grid(row=2, column=2, padx=3, sticky='sw')
         radio3.grid(row=2, column=3, padx=3, sticky='sw')
 
         # INDEX elements
-        INDEX_list = ["S&P 500", "NASDAQ"]
+        INDEX_list = ["Sector ETF","S&P 500", "NASDAQ"]
         self.dropdown2_cmd = tk.StringVar()
         self.dropdown2_cmd.set(INDEX_list[0]) # default value
         dropdown2 = tk.OptionMenu(self, self.dropdown2_cmd, *INDEX_list)
