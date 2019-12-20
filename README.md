@@ -34,6 +34,9 @@ The Stock Selector report has the below sections:
 
 ![Environment variable config](images/add_to_path_variable.png)
 ![Environment variable config](images/add_to_path_variable2.png)
+
+
+
 Have fun with the Stock Selector! :+1:
 
 ## Disclaimer
