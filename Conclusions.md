@@ -47,7 +47,11 @@ models.append(('SVM', SVC()))
 
 <br/>
 
-![CD_chart](images/cd_relative_chart.png)    ![CD_chart](images/XLY_value_chart.png) 
+
+| Performance                              |                             |
+|:---:                                     | :---:                       |
+|![CD_chart](images/cd_relative_chart.png) |   ![CD_chart](images/XLY_value_chart.png) |
+
 
 <br/>
 
@@ -58,13 +62,21 @@ models.append(('SVM', SVC()))
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlk_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_tech.png" width="225" height="150">
 <br/>
 
-![CD_chart](images/tech_relative_chart.png)    ![CD_chart](images/XLK_value_chart.png) 
+| Performance                               |                             |
+|:---:                                      | :---:                       |
+|![CD_chart](images/tech_relative_chart.png)| ![CD_chart](images/XLK_value_chart.png) |
+
+
 <br/>
 ![CD_chart](images/XLP_algo.png)
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlp_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_xlp.png" width="225" height="150">
 <br/>
-![CD_chart](images/cs_relative_chart.png)    ![CD_chart](images/XLP_value_chart.png) 
+
+| Performance                               |                             |
+|:---:                                      | :---:                       |
+|![CD_chart](images/cs_relative_chart.png)  | ![CD_chart](images/XLP_value_chart.png)| 
+
 <br/>
 <br/>
 ![CD_chart](images/XLV_algo.png) 
@@ -73,4 +85,7 @@ models.append(('SVM', SVC()))
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlv_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_hc.png" width="225" height="150">
 <br/>
  <br/>
-![CD_chart](images/hc_relative_chart.png)    ![CD_chart](images/XLV_value_chart.png) 
+ 
+| Performance                               |                             |
+|:---:                                      | :---:                       |
+|![CD_chart](images/hc_relative_chart.png)  | ![CD_chart](images/XLV_value_chart.png) |
