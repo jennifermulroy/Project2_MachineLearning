@@ -16,7 +16,7 @@
 1. Clone the repo to your local drive.
 2. From your terminal locate the [\frontend](/frontend) folder within the repo and in the terminal type ```python main.py``` and Hit Run.
 3. Once you hit Run the SS pops up. Select Sector, market cap, index (Sector ETF), asset class (stocks), and no of instruments.
-4. Hit SELECT STOCKS once all the details are entered and the SS will run all the machine learning models and scrape stock summaries from Yahoo Finance on the backed to generate a report in the reports folder.
+4. Hit SELECT STOCKS once all the details are entered and the SS will run all the machine learning models (model run in [master_data.ipynb](/master_data.ipynb) notebook and saved in [finalized_model.sav](/finalized_model.sav)) and scrape stock summaries from Yahoo Finance on the backed to generate a report in the reports folder.
 5. Each report is time_stamped so generate as many reports you want with different number of stocks across sectors.
 
 
