@@ -45,7 +45,7 @@ models.append(('SVM', SVC()))
 ![CD_chart](images/XLY_algo.png)  
 <br/>
 
-The `KNeighborsClassifier' had the best cross validation score and was used to predict with the test data for XLY.
+The `KNeighborsClassifier' had the best cross validation score and was used to predict with the test data for XLY. The accuracy score on the test data was 56% and a false positive rate of 50%. From the stocks selected by the model, we constructed an equally weighted portfolio and compared performance relative to the sector benchmark. AS per the chart below, the portfolio over the 2019 period has slightly outperformed the benchmark by 4%. 
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xly_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <img src="/images/cm_cd.png" width="225" height="150">
@@ -62,7 +62,7 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 
 ![CD_chart](images/XLK_algo.png)
 
-`GaussianNB` had the best cross validation score and was used to predict with the test data for XLK.  
+`GaussianNB` had the best cross validation score and was used to predict with the test data for XLK.  The accuracy score on the test data was low at 38% but a low false positive rate of approximately 20%. The equally weighted portfolio of stocks selected from the model initially outperformed the sector benchmark but outperformance declined as the year progressed. AS per the chart below, the portfolio over the 2019 period is slightly inline with the performance of the benchmark. 
 
 <br/>
 
@@ -79,7 +79,7 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 
 ![CD_chart](images/XLP_algo.png)
 
-`SVC` had the best cross validation score and was used to predict with the test data for XLP. 
+`SVC` had the best cross validation score and was used to predict with the test data for XLP. The accuracy score on the test data was low at 45% and a false positive rate of 100%. The model generated results that suggested selecting all of the stocks in the benchmark, expect ticker PEP.  As expected, the annual performance was inline with the benchmark.
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlp_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_xlp.png" width="225" height="150">
