@@ -82,7 +82,8 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 `SVC` had the best cross validation score and was used to predict with the test data for XLP. The accuracy score on the test data was low at 45% and a false positive rate of 100%. The model generated results that suggested selecting all of the stocks in the benchmark, expect ticker PEP.  As expected, the annual performance was inline with the benchmark.
 
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlp_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_xlp.png" width="225" height="150">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/xlp_class.png" width="300" height="175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="/images/cm_xlp.png" width="225" height="150">
 <br/>
 
 | Performance                               |                             |
@@ -95,7 +96,7 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 
 ![CD_chart](images/XLV_algo.png)
 
-`LogisticRegression` had the best cross validation score and was used to predict with the test data for XLV 
+`LogisticRegression` had the best cross validation score and was used to predict with the test data for XLV. The accuracy score on the test data was high at 67% but also a high false positive rate of approximately 90%. The equally weighted portfolio of stocks selected from the model has shown strong outperformance to the Health Care sector benchmark but given the high false positive rate the model is robust. 
 
 <br/>
 <br/>
@@ -106,3 +107,6 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 | Performance                               |                             |
 |:---:                                      | :---:                       |
 |![CD_chart](images/hc_relative_chart.png)  | ![CD_chart](images/XLV_value_chart.png) |
+
+
+In conclusion, fundamental data appears to have some predictability patterns identified by machine learning but is not sufficient to generate sustainable outsized returns. 
