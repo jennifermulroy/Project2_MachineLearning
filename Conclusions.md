@@ -96,7 +96,7 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 
 ![CD_chart](images/XLV_algo.png)
 
-`LogisticRegression` had the best cross validation score and was used to predict with the test data for XLV. The accuracy score on the test data was high at 67% but also a high false positive rate of approximately 90%. The equally weighted portfolio of stocks selected from the model has shown strong outperformance to the Health Care sector benchmark but given the high false positive rate the model is robust. 
+`LogisticRegression` had the best cross validation score and was used to predict with the test data for XLV. The accuracy score on the test data was high at 67% but also a high false positive rate of approximately 90%. The equally weighted portfolio of stocks selected from the model has shown strong outperformance to the Health Care sector benchmark but given the high false positive rate the model is not robust. 
 
 <br/>
 <br/>
@@ -109,4 +109,4 @@ The `KNeighborsClassifier' had the best cross validation score and was used to p
 |![CD_chart](images/hc_relative_chart.png)  | ![CD_chart](images/XLV_value_chart.png) |
 
 
-In conclusion, fundamental data appears to have some predictability patterns identified by machine learning but is not sufficient to generate sustainable outsized returns. 
+In conclusion, the results were mixed. Fundamental stock data appears to have some predictability patterns identified by machine learning algorithms but may not be sufficient in generating sustainable and consistent outsized returns.
