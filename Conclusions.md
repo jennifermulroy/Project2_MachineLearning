@@ -1,6 +1,6 @@
-# Project Analysis and Conclusions
+# Analysis and Conclusions
 
-In this project, we explored sector specific stock selection using machine learning techniques with fundamental data analysis. 
+In this analysis, we explored sector specific stock selection using machine learning techniques with fundamental data analysis. 
 
 We focused on stocks in four SPDR ETF sectors:  
 - XLY (Consumer Discretionary)
