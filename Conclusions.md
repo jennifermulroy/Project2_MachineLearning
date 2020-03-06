@@ -1,6 +1,6 @@
 # Analysis and Conclusions
 
-In this analysis, we explored sector specific stock selection using machine learning techniques with fundamental data analysis. 
+In this analysis, we explored sector specific stock selection using machine learning techniques with fundamental data. 
 
 We focused on stocks in four SPDR ETF sectors:  
 - XLY (Consumer Discretionary)
