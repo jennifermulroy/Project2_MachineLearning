@@ -118,7 +118,7 @@ h5py==2.9.0
 heapdict==1.0.0
 holoviews==1.12.5
 html5lib==1.0.1
-httplib2==0.12.3
+httplib2==0.18.0
 humanize==0.5.1
 hvplot==0.4.0
 ibm-cloud-sdk-core==1.0.0
