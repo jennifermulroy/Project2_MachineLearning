@@ -65,7 +65,7 @@ Corpus==0.4.2
 cryptography==2.6.1
 cssselect2==0.2.2
 cufflinks==0.16
-cvxopt==1.2.3
+cvxopt==1.2.7
 cycler==0.10.0
 cymem==2.0.2
 Cython==0.29.6
