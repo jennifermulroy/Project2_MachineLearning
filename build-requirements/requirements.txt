@@ -235,7 +235,7 @@ progressbar==2.5
 prometheus-client==0.6.0
 prompt-toolkit==2.0.9
 property-cached==1.6.3
-protobuf==3.10.0
+protobuf==3.18.3
 protobuf3-to-dict==0.1.5
 psutil==5.6.1
 psycopg2==2.8.3
